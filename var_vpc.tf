@@ -21,6 +21,7 @@ variable "vpc_private_subnets" {
 variable "tags" {
   type = string 
   default = "georgeibrahim"
+}
 
   
 
