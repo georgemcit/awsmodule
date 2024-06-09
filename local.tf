@@ -22,3 +22,12 @@ locals {
   ]
 
 } 
+variable "environment" {
+  type = string
+  default = "dev"
+}
+# Business Division
+variable "business_divsion" {
+  type = string
+  default = "sap"
+}
