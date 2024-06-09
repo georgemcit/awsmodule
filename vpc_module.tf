@@ -13,6 +13,7 @@ module "vpc" {
   public_subnet_tags = {
     Type = "Public Subnets"
   }
-  private_subnet_tags = {
-    Type = "Private Subnets"
-  }  
+ database_subnet_tags = {
+    Type = "Private Database Subnets"
+  }
+}
