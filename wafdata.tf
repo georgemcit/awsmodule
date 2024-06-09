@@ -1,5 +1,5 @@
-resource "aws_wafv2_web_acl" "example" {
-  name  = "web-acl-association-example"
+resource "aws_wafv2_web_acl" "george" {
+  name  = "web-acl-association-george"
   scope = "REGIONAL"
 
   default_action {
@@ -13,7 +13,7 @@ resource "aws_wafv2_web_acl" "example" {
   }
 }
 
-resource "aws_wafv2_web_acl_association" "example" {
-  resource_arn = aws_api_gateway_stage.example.arn
-  web_acl_arn  = aws_wafv2_web_acl.example.arn
+resource "aws_wafv2_web_acl_association" "george" {
+  resource_arn = aws_api_gateway_stage.george.arn
+  web_acl_arn  = aws_wafv2_web_acl.george.arn
 }
