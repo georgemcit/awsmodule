@@ -12,9 +12,10 @@ resource "aws_wafv2_web_acl" "george" {
     sampled_requests_enabled   = false
   }
 }
-
+/*
 resource "aws_wafv2_web_acl_association" "george" {
   resource_arn = module.loadbalancer_sg.id
   web_acl_arn  = module.loadbalancer_sg.id
 }
 
+*/
