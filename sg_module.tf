@@ -7,5 +7,5 @@ module "george_sg" {
   ingress_rules = ["ssh-tcp"]
   ingress_cidr_blocks = ["0.0.0.0/0"]
   egress_rules = ["all-all"]
-  tags = local.common_tags
+  tags = georgeibrahim
 }
