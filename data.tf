@@ -18,3 +18,7 @@ data "aws_ami" "amzlinux2" {
     values = [ "x86_64" ]
   }
 }
+variable "instance_type" {
+  type = string
+  default = "t3.micro"  
+}
