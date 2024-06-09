@@ -6,6 +6,7 @@ module "vpc" {
   azs             = var.vpc_availability_zones
   public_subnets  = var.vpc_public_subnets
   private_subnets = var.vpc_private_subnets  
+
   tags = local.common_tags
   vpc_tags = local.common_tags
 
