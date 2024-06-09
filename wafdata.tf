@@ -14,6 +14,6 @@ resource "aws_wafv2_web_acl" "george" {
 }
 
 resource "aws_wafv2_web_acl_association" "george" {
-  resource_arn = aws_api_gateway_stage.george.arn
-  web_acl_arn  = aws_wafv2_web_acl.george.arn
+  resource_arn = module.loadbalancer_sg
+  web_acl_arn  = module.loadbalancer_sg
 }
